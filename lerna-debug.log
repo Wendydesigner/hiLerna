@@ -1,0 +1,71 @@
+0 silly argv { _: [ 'publish' ],
+0 silly argv   composed: 'publish',
+0 silly argv   lernaVersion: '3.8.5',
+0 silly argv   '$0': 'lerna' }
+1 notice cli v3.8.5
+2 verbose rootPath /Users/wenyan/Documents/interview/package/lerna
+3 verbose session 9babbad3fc6770cc
+4 verbose user-agent lerna/3.8.5/node@v9.7.1+x64 (darwin)
+5 silly argv { _: [ 'publish' ], composed: 'publish', lernaVersion: '3.8.5' }
+6 verbose rootPath /Users/wenyan/Documents/interview/package/lerna
+7 info current version 0.0.0
+8 silly isAnythingCommitted
+9 verbose isAnythingCommitted 1
+10 silly currentBranch
+11 verbose currentBranch master
+12 silly remoteBranchExists
+13 silly isBehindUpstream
+14 silly isBehindUpstream master is behind origin/master by 0 commit(s) and ahead by 0
+15 silly hasTags
+16 verbose hasTags false
+17 info Looking for changed packages since initial commit.
+18 verbose updated modulea
+19 verbose git-describe undefined => "b3bdac1"
+20 silly git-describe parsed => {"refCount":"3","sha":"b3bdac1","isDirty":false}
+21 silly batched [ PackageGraphNode {
+21 silly batched     name: 'modulea',
+21 silly batched     externalDependencies: Map { 'vue' => [Object] },
+21 silly batched     localDependencies: Map {},
+21 silly batched     localDependents: Map {} } ]
+22 silly lifecycle No script for "preversion" in "root", continuing
+23 silly lifecycle No script for "preversion" in "modulea", continuing
+24 silly lifecycle No script for "version" in "modulea", continuing
+25 silly lifecycle No script for "version" in "root", continuing
+26 silly gitAdd [ '/Users/wenyan/Documents/interview/package/lerna/packages/modulea/package.json',
+26 silly gitAdd   '/Users/wenyan/Documents/interview/package/lerna/lerna.json' ]
+27 silly gitCommit chore(release): publish 0.1.0
+28 verbose git [ 'commit', '-m', 'chore(release): publish 0.1.0' ]
+29 silly gitTag v0.1.0
+30 verbose git [ 'tag', 'v0.1.0', '-m', 'v0.1.0' ]
+31 silly lifecycle No script for "postversion" in "modulea", continuing
+32 silly lifecycle No script for "postversion" in "root", continuing
+33 info git Pushing tags...
+34 silly gitPush origin master
+35 silly batched [ PackageGraphNode {
+35 silly batched     name: 'modulea',
+35 silly batched     externalDependencies: Map { 'vue' => [Object] },
+35 silly batched     localDependencies: Map {},
+35 silly batched     localDependents: Map {} } ]
+36 info publish Publishing packages to npm...
+37 notice Skipping all user and access validation due to third-party registry
+38 notice Make sure you're authenticated properly ¯\_(ツ)_/¯
+39 warn ENOLICENSE Packages modulea are missing a license
+40 silly getCurrentSHA
+41 verbose getCurrentSHA 36f54bbc9cfd26e58f0437c76972fd42471e4711
+42 silly lifecycle No script for "prepublish" in "root", continuing
+43 silly lifecycle No script for "prepare" in "root", continuing
+44 silly lifecycle No script for "prepublishOnly" in "root", continuing
+45 silly lifecycle No script for "prepack" in "root", continuing
+46 verbose pack-directory packages/modulea
+47 silly lifecycle No script for "prepublish" in "modulea", continuing
+48 silly lifecycle No script for "prepare" in "modulea", continuing
+49 silly lifecycle No script for "prepublishOnly" in "modulea", continuing
+50 silly lifecycle No script for "prepack" in "modulea", continuing
+51 silly lifecycle No script for "postpack" in "modulea", continuing
+52 verbose packed modulea packages/modulea
+53 silly lifecycle No script for "postpack" in "root", continuing
+54 verbose publish modulea
+55 http fetch PUT 403 https://registry.npm.taobao.org/modulea 376ms
+56 error Error: 403 Forbidden - PUT https://registry.npm.taobao.org/modulea - no_perms
+56 error     at res.buffer.catch.then.body (/Users/wenyan/.nvm/versions/node/v9.7.1/lib/node_modules/lerna/node_modules/npm-registry-fetch/check-response.js:104:15)
+56 error     at <anonymous>
