@@ -1,6 +1,6 @@
 {
   "name": "modulea",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,8 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "vue": "^2.6.6",
-    "jquery": "3.3.1"
+    "jquery": "3.3.1",
+    "vue": "^2.6.6"
   },
   "gitHead": "36f54bbc9cfd26e58f0437c76972fd42471e4711"
 }
